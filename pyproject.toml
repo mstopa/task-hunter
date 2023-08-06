@@ -1,0 +1,11 @@
+[tool.setuptools]
+py-modules = []
+
+[project]
+name = "th-backend"
+version = "0.1.0"
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.in"] }
+optional-dependencies.dev = { file = ["requirements-dev.in"] }
