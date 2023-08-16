@@ -31,3 +31,13 @@ Modify the list of dependencies in `requirements.in` or `requirements-dev.in`. T
 pip-compile -o requirements.txt pyproject.toml
 pip-compile --extra dev -o requirements-dev.txt pyproject.toml
 ```
+
+### Database
+
+Run PostgreSQL server.
+
+Copy `.env.example` to `.env` and fill in the values.
+
+```bash
+cp .env.example .env
+```
